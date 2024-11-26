@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class CameraMovement : MonoBehaviour
     public bool hidden;
     public bool dead;
     public bool timesUp;
+
+    public GameObject OfficeHubA;
+    public GameObject OfficeHubB;
+    public GameObject CamHud;
+    public GameObject HideHud;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,7 +25,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             InteractCam();
         }
@@ -51,10 +57,16 @@ public class CameraMovement : MonoBehaviour
         if(currentPosition==0)
             {
                 currentPosition=1;
+                CamHud.SetActive(true);
+                OfficeHubA.SetActive(false);
+                OfficeHubB.SetActive(false);
             }
-            else if(currentPosition==1)
+        else if(currentPosition==1)
             {
                 currentPosition=0;
+                CamHud.SetActive(false);
+                OfficeHubA.SetActive(true);
+                OfficeHubB.SetActive(true);
             }
     }
 
@@ -63,10 +75,16 @@ public class CameraMovement : MonoBehaviour
         if(currentPosition==0)
             {
                 currentPosition=2;
+                HideHud.SetActive(true);
+                OfficeHubA.SetActive(false);
+                OfficeHubB.SetActive(false);
             }
-            else if(currentPosition==2)
+        else if(currentPosition==2)
             {
                 currentPosition=0;
+                HideHud.SetActive(false);
+                OfficeHubA.SetActive(true);
+                OfficeHubB.SetActive(true);
             }
     }
 }
