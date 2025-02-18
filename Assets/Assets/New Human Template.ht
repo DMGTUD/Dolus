@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1105 &110500000
+HumanTemplate:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Human Template
+  m_BoneTemplate:
+    Chest: Torso2
+    Head: Head
+    Hips: Pelvis
+    Left Index Distal: Finger2.3_l
+    Left Index Intermediate: Finger2.2_l
+    Left Index Proximal: Finger2.1_l
+    Left Little Distal: Finger5.3_l
+    Left Little Intermediate: Finger5.2_l
+    Left Little Proximal: Finger5.1_l
+    Left Middle Distal: Finger3.3_l
+    Left Middle Intermediate: Finger3.2_l
+    Left Middle Proximal: Finger3.1_l
+    Left Ring Distal: Finger4.3_l
+    Left Ring Intermediate: Finger4.2_l
+    Left Ring Proximal: Finger4.1_l
+    Left Thumb Distal: Finger1.3_l
+    Left Thumb Intermediate: Finger1.2_l
+    Left Thumb Proximal: Finger1.1_l
+    LeftFoot: LegSpike_l
+    LeftHand: Section4_l
+    LeftLowerArm: Section1_l
+    LeftLowerLeg: Tibia_l
+    LeftShoulder: Shoulder_l
+    LeftToes: Foot_l
+    LeftUpperArm: Arm_l
+    LeftUpperLeg: Thigh_l
+    Neck: Neck
+    Right Index Distal: Finger2.3_r
+    Right Index Intermediate: Finger2.2_r
+    Right Index Proximal: Finger2.1_r
+    Right Little Distal: Finger5.3_r
+    Right Little Intermediate: Finger5.2_r
+    Right Little Proximal: Finger5.1_r
+    Right Middle Distal: Finger3.3_r
+    Right Middle Intermediate: Finger3.2_r
+    Right Middle Proximal: Finger3.1_r
+    Right Ring Distal: Finger4.3_r
+    Right Ring Intermediate: Finger4.2_r
+    Right Ring Proximal: Finger4.1_r
+    Right Thumb Distal: Finger1.3_r
+    Right Thumb Intermediate: Finger1.2_r
+    Right Thumb Proximal: Finger1.1_r
+    RightFoot: LegSpike_r
+    RightHand: Section4_r
+    RightLowerArm: Section1_r
+    RightLowerLeg: Tibia_r
+    RightShoulder: Shoulder_r
+    RightToes: Foot_r
+    RightUpperArm: Arm_r
+    RightUpperLeg: Thigh_r
+    Spine: Torso1

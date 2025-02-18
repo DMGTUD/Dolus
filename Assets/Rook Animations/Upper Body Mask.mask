@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Upper Body Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Pelvis
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/LegStart_l
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/LegStart_l/Thigh_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_l/Thigh_l/Tibia_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_l/Thigh_l/Tibia_l/LegSpike_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_l/Thigh_l/Tibia_l/LegSpike_l/Foot_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_l/Thigh_l/Tibia_l/LegSpike_l/Foot_l/Foot_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_r
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/LegStart_r/Thigh_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_r/Thigh_r/Tibia_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_r/Thigh_r/Tibia_r/LegSpike_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_r/Thigh_r/Tibia_r/LegSpike_r/Foot_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/LegStart_r/Thigh_r/Tibia_r/LegSpike_r/Foot_r/Foot_r_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Neck
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Neck/Head
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Neck/Head/Head_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger1.1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger1.1_l/Finger1.2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger1.1_l/Finger1.2_l/Finger1.3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger1.1_l/Finger1.2_l/Finger1.3_l/Finger1.4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger1.1_l/Finger1.2_l/Finger1.3_l/Finger1.4_l/Finger1.4_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger2.1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger2.1_l/Finger2.2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger2.1_l/Finger2.2_l/Finger2.3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger2.1_l/Finger2.2_l/Finger2.3_l/Finger2.4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger2.1_l/Finger2.2_l/Finger2.3_l/Finger2.4_l/Finger2.4_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger3.1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger3.1_l/Finger3.2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger3.1_l/Finger3.2_l/Finger3.3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger3.1_l/Finger3.2_l/Finger3.3_l/Finger3.4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger3.1_l/Finger3.2_l/Finger3.3_l/Finger3.4_l/Finger3.4_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger4.1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger4.1_l/Finger4.2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger4.1_l/Finger4.2_l/Finger4.3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger4.1_l/Finger4.2_l/Finger4.3_l/Finger4.4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger4.1_l/Finger4.2_l/Finger4.3_l/Finger4.4_l/Finger4.4_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger5.1_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger5.1_l/Finger5.2_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger5.1_l/Finger5.2_l/Finger5.3_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger5.1_l/Finger5.2_l/Finger5.3_l/Finger5.4_l
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_l/Arm_l/Section1_l/Section2_l/Section3_l/Section4_l/Finger5.1_l/Finger5.2_l/Finger5.3_l/Finger5.4_l/Finger5.4_l_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger1.1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger1.1_r/Finger1.2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger1.1_r/Finger1.2_r/Finger1.3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger1.1_r/Finger1.2_r/Finger1.3_r/Finger1.4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger1.1_r/Finger1.2_r/Finger1.3_r/Finger1.4_r/Finger1.4_r_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger2.1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger2.1_r/Finger2.2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger2.1_r/Finger2.2_r/Finger2.3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger2.1_r/Finger2.2_r/Finger2.3_r/Finger2.4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger2.1_r/Finger2.2_r/Finger2.3_r/Finger2.4_r/Finger2.4_r_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger3.1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger3.1_r/Finger3.2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger3.1_r/Finger3.2_r/Finger3.3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger3.1_r/Finger3.2_r/Finger3.3_r/Finger3.4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger3.1_r/Finger3.2_r/Finger3.3_r/Finger3.4_r/Finger3.4_r_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger4.1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger4.1_r/Finger4.2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger4.1_r/Finger4.2_r/Finger4.3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger4.1_r/Finger4.2_r/Finger4.3_r/Finger4.4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger4.1_r/Finger4.2_r/Finger4.3_r/Finger4.4_r/Finger4.4_r_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger5.1_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger5.1_r/Finger5.2_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger5.1_r/Finger5.2_r/Finger5.3_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger5.1_r/Finger5.2_r/Finger5.3_r/Finger5.4_r
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Torso1/Torso2/Shoulder_r/Arm_r/Section1_r/Section2_r/Section3_r/Section4_r/Finger5.1_r/Finger5.2_r/Finger5.3_r/Finger5.4_r/Finger5.4_r_end
+    m_Weight: 1
+  - m_Path: Rook
+    m_Weight: 0
