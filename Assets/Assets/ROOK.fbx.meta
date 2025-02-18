@@ -504,6 +504,66 @@ ModelImporter:
       position: {x: 0, y: -0.0018532657, z: 0.116935536}
       rotation: {x: 0.5401026, y: 4.963084e-24, z: 4.5795257e-17, w: 0.8415992}
       scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: LegStart_l
+      parentName: Pelvis
+      position: {x: 2.97785e-25, y: 0.01779516, z: -5.9604643e-10}
+      rotation: {x: 0.8414381, y: -0.26933166, z: -0.41967815, w: -0.20811693}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Thigh_l
+      parentName: LegStart_l
+      position: {x: -0.0000000032782554, y: 0.023457808, z: 2.6077032e-10}
+      rotation: {x: 0.26968813, y: 0.8109467, z: -0.056768052, w: -0.5161504}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.99999976}
+    - name: Tibia_l
+      parentName: Thigh_l
+      position: {x: 0.0000000031292438, y: 0.043708738, z: -5.9604643e-10}
+      rotation: {x: 0.018533451, y: 0.9484327, z: -0.3039475, w: 0.08802283}
+      scale: {x: 1, y: 0.99999976, z: 1.0000001}
+    - name: LegSpike_l
+      parentName: Tibia_l
+      position: {x: 4.0978193e-10, y: 0.030244198, z: -5.9604643e-10}
+      rotation: {x: 0.27928337, y: 0.084351934, z: 0.005699986, w: -0.9564795}
+      scale: {x: 1, y: 0.99999994, z: 1.0000004}
+    - name: Foot_l
+      parentName: LegSpike_l
+      position: {x: 0.0000000012712553, y: 0.04255007, z: -1.4901161e-10}
+      rotation: {x: -0.6430657, y: 0.00000014342366, z: 0.02638641, w: 0.76535636}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Foot_l_end
+      parentName: Foot_l
+      position: {x: -0, y: 0.0126, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LegStart_r
+      parentName: Pelvis
+      position: {x: 2.97785e-25, y: 0.01779516, z: -5.9604643e-10}
+      rotation: {x: 0.8414381, y: 0.26933166, z: 0.41967815, w: -0.20811693}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Thigh_r
+      parentName: LegStart_r
+      position: {x: 0.0000000032782554, y: 0.023457808, z: 2.6077032e-10}
+      rotation: {x: -0.26968813, y: 0.8109467, z: -0.056768052, w: 0.5161504}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.99999976}
+    - name: Tibia_r
+      parentName: Thigh_r
+      position: {x: -0.0000000031292438, y: 0.043708738, z: -5.9604643e-10}
+      rotation: {x: -0.01853342, y: 0.94843256, z: -0.30394754, w: -0.088022925}
+      scale: {x: 1, y: 0.9999997, z: 0.9999999}
+    - name: LegSpike_r
+      parentName: Tibia_r
+      position: {x: -4.0978193e-10, y: 0.030244198, z: -5.9604643e-10}
+      rotation: {x: 0.27928343, y: -0.08435183, z: -0.005699953, w: -0.9564796}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Foot_r
+      parentName: LegSpike_r
+      position: {x: -0.0000000012712553, y: 0.04255007, z: -1.4901161e-10}
+      rotation: {x: -0.6430657, y: -0.00000014342366, z: -0.02638641, w: 0.76535636}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: Foot_r_end
+      parentName: Foot_r
+      position: {x: -0, y: 0.0126, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Torso1
       parentName: Pelvis
       position: {x: 2.97785e-25, y: 0.01779516, z: -5.9604643e-10}
@@ -512,7 +572,7 @@ ModelImporter:
     - name: Torso2
       parentName: Torso1
       position: {x: -9.264423e-25, y: 0.01812203, z: -1.4901161e-10}
-      rotation: {x: 0.008725702, y: -0.00000011920475, z: -0.0000000010401954, w: 0.9999619}
+      rotation: {x: 0.008725703, y: -0.000000119204756, z: -0.0000000010401955, w: 0.999962}
       scale: {x: 1, y: 0.9999998, z: 0.9999998}
     - name: Neck
       parentName: Torso2
@@ -542,12 +602,12 @@ ModelImporter:
     - name: Section1_l
       parentName: Arm_l
       position: {x: 3.253808e-10, y: 0.014419049, z: 5.122274e-11}
-      rotation: {x: 0.0038588531, y: -0.000041425228, z: 0.52668226, w: 0.8500535}
+      rotation: {x: -0.00090657134, y: -0.00017088643, z: -0.0966765, w: 0.99531543}
       scale: {x: 1.0000004, y: 0.99999994, z: 1.0000001}
     - name: Section2_l
       parentName: Section1_l
       position: {x: 0.0000000045011985, y: 0.008836545, z: 0}
-      rotation: {x: 0.0011724932, y: -0.000027909053, z: 0.123009115, w: 0.9924048}
+      rotation: {x: 0.0002650012, y: -0.000026394877, z: 0.026370138, w: 0.99965227}
       scale: {x: 1.0000002, y: 1.0000004, z: 1}
     - name: Section3_l
       parentName: Section2_l
@@ -562,7 +622,7 @@ ModelImporter:
     - name: Finger1.1_l
       parentName: Section4_l
       position: {x: 0.00013186889, y: 0.021413635, z: 0.01675924}
-      rotation: {x: 0.00000006519258, y: -0.000000014799298, z: -0.00000006704752, w: 1}
+      rotation: {x: 0.3352874, y: -0.0000000115504495, z: -0.0023728195, w: 0.942113}
       scale: {x: 1.0000002, y: 0.9999996, z: 1.0000006}
     - name: Finger1.2_l
       parentName: Finger1.1_l
@@ -697,12 +757,12 @@ ModelImporter:
     - name: Section1_r
       parentName: Arm_r
       position: {x: -8.7893565e-10, y: 0.014419044, z: -5.122274e-11}
-      rotation: {x: -0.003858859, y: -0.00004127622, z: 0.5266823, w: -0.8500535}
+      rotation: {x: 0.0009054744, y: -0.00017169114, z: -0.09667692, w: -0.99531543}
       scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
     - name: Section2_r
       parentName: Section1_r
       position: {x: 2.6717314e-10, y: 0.008836551, z: 3.7252902e-11}
-      rotation: {x: 0.0011724335, y: 0.000027975839, z: -0.12300901, w: 0.99240494}
+      rotation: {x: 0.00026409738, y: 0.000026634001, z: -0.026370753, w: 0.99965227}
       scale: {x: 1.0000002, y: 1.0000001, z: 1}
     - name: Section3_r
       parentName: Section2_r
@@ -717,7 +777,7 @@ ModelImporter:
     - name: Finger1.1_r
       parentName: Section4_r
       position: {x: -0.00013186884, y: 0.021413635, z: 0.016759237}
-      rotation: {x: 0.00000008835922, y: 0.00000003311288, z: 0.000000059578927, w: 1}
+      rotation: {x: 0.33528772, y: 0.00000068263074, z: 0.002372885, w: 0.94211274}
       scale: {x: 1.0000002, y: 0.9999998, z: 1.0000004}
     - name: Finger1.2_r
       parentName: Finger1.1_r
@@ -837,66 +897,6 @@ ModelImporter:
     - name: Finger5.4_r_end
       parentName: Finger5.4_r
       position: {x: -0, y: 0.009424891, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LegStart_l
-      parentName: Pelvis
-      position: {x: 2.97785e-25, y: 0.01779516, z: -5.9604643e-10}
-      rotation: {x: 0.8414381, y: -0.26933166, z: -0.41967815, w: -0.20811693}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: Thigh_l
-      parentName: LegStart_l
-      position: {x: -0.0000000032782554, y: 0.023457808, z: 2.6077032e-10}
-      rotation: {x: 0.15951802, y: 0.7853588, z: -0.21214655, w: -0.559249}
-      scale: {x: 0.9999997, y: 0.9999997, z: 0.99999976}
-    - name: Tibia_l
-      parentName: Thigh_l
-      position: {x: 0.0000000031292438, y: 0.043708738, z: -5.9604643e-10}
-      rotation: {x: 0.10879688, y: 0.34424326, z: -0.93128747, w: 0.048616752}
-      scale: {x: 1, y: 0.99999976, z: 1.0000001}
-    - name: LegSpike_l
-      parentName: Tibia_l
-      position: {x: 4.0978193e-10, y: 0.030244198, z: -5.9604643e-10}
-      rotation: {x: 0.83916575, y: 0.10079318, z: -0.005489811, w: -0.5344264}
-      scale: {x: 1, y: 0.99999994, z: 1.0000004}
-    - name: Foot_l
-      parentName: LegSpike_l
-      position: {x: 0.0000000012712553, y: 0.04255007, z: -1.4901161e-10}
-      rotation: {x: -0.64306563, y: 0.00000014342365, z: 0.026386408, w: 0.7653563}
-      scale: {x: 0.9999999, y: 1, z: 0.9999999}
-    - name: Foot_l_end
-      parentName: Foot_l
-      position: {x: -0, y: 0.0126, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LegStart_r
-      parentName: Pelvis
-      position: {x: 2.97785e-25, y: 0.01779516, z: -5.9604643e-10}
-      rotation: {x: 0.8414381, y: 0.26933166, z: 0.41967815, w: -0.20811693}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: Thigh_r
-      parentName: LegStart_r
-      position: {x: 0.0000000032782554, y: 0.023457808, z: 2.6077032e-10}
-      rotation: {x: -0.15951802, y: 0.7853588, z: -0.21214655, w: 0.559249}
-      scale: {x: 0.9999997, y: 0.9999997, z: 0.99999976}
-    - name: Tibia_r
-      parentName: Thigh_r
-      position: {x: -0.0000000031292438, y: 0.043708738, z: -5.9604643e-10}
-      rotation: {x: -0.10879688, y: 0.34424326, z: -0.93128747, w: -0.048616752}
-      scale: {x: 1, y: 0.9999997, z: 0.9999999}
-    - name: LegSpike_r
-      parentName: Tibia_r
-      position: {x: -4.0978193e-10, y: 0.030244198, z: -5.9604643e-10}
-      rotation: {x: 0.83916575, y: -0.10079318, z: 0.005489811, w: -0.5344264}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: Foot_r
-      parentName: LegSpike_r
-      position: {x: -0.0000000012712553, y: 0.04255007, z: -1.4901161e-10}
-      rotation: {x: -0.64306563, y: -0.00000014342365, z: -0.026386408, w: 0.7653563}
-      scale: {x: 0.9999999, y: 1.0000001, z: 1}
-    - name: Foot_r_end
-      parentName: Foot_r
-      position: {x: -0, y: 0.0126, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Rook
