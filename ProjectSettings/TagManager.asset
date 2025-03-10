@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - World
+  - Waypoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - World
   - Water
   - UI
   - 

@@ -15,9 +15,9 @@ public class AnimationUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        glitch=upload.GetComponent<PressedKeep>().fill/upload.GetComponent<PressedKeep>().full;
+        /*glitch=upload.GetComponent<PressedKeep>().fill/upload.GetComponent<PressedKeep>().full;
         GetComponent<Animator>().SetLayerWeight(1,glitch);
-        GetComponent<Animator>().SetFloat("Glitch",1);
+        GetComponent<Animator>().SetFloat("Glitch",1);*/
 
 
     }
