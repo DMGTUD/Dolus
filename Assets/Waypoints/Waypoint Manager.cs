@@ -43,7 +43,7 @@ public class WaypointManager : MonoBehaviour
     public GameObject RandomLOSMethod (GameObject current)
     {
         int sizeCount=0;
-        foreach(GameObject x in this.transform)
+        foreach(Transform x in this.transform)
         {
             
             Vector3 fromPosition = current.transform.position;
@@ -51,23 +51,24 @@ public class WaypointManager : MonoBehaviour
             Vector3 direction = toPosition - fromPosition;
             RaycastHit hit;
 
-            if(Physics.Raycast(fromPosition, direction,out hit,1000))
+            //print (fromPosition+toPosition+direction);                                                             
+
+            if(Physics.Raycast(fromPosition, direction,out hit,7))
             {
                 if(hit.collider.tag == "Waypoint")
                 {
                     sizeCount++;
                 }
+                
             }
-
             
         }
-        
-        
-        
-        GameObject[] possibleTargets = new GameObject [sizeCount];
+
+        //print (sizeCount);
+        GameObject[] possibleTargets = new GameObject[sizeCount];
         int count=0;
 
-        foreach(GameObject x in this.transform)
+        foreach(Transform x in this.transform)
         {
             
             Vector3 fromPosition = current.transform.position;
@@ -75,23 +76,24 @@ public class WaypointManager : MonoBehaviour
             Vector3 direction = toPosition - fromPosition;
             RaycastHit hit;
 
-            if(Physics.Raycast(fromPosition, direction,out hit,1000))
+            if(Physics.Raycast(fromPosition, direction,out hit,7))
             {
                 if(hit.collider.tag == "Waypoint")
                 {
-                    possibleTargets= new GameObject[count];
                     possibleTargets[count]=hit.transform.gameObject;
                     count++;
-                    print("got a hit");
+                    //print("got a hit");
                 }
             }
+            
 
             
         }
         
         
-        int kawesa = Random.Range(0,possibleTargets.Length);
+        int kawesa = Random.Range(0,sizeCount-1);
         return possibleTargets[kawesa]; 
+        //return null;
         
     }
 

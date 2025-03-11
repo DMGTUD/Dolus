@@ -50,7 +50,8 @@ public class EnemyMove : MonoBehaviour
                 {
                     DelayMove();
                 }
-                currentTarget = waypointManager.NextWaypoint(currentTarget);
+                GameObject tempObject = currentTarget;
+                currentTarget = waypointManager.NextWaypoint(tempObject);
                 transform.LookAt(currentTarget.transform);
                 currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;
             }
