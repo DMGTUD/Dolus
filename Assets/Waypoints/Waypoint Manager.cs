@@ -5,17 +5,33 @@ public class WaypointManager : MonoBehaviour
     int nextIndex;
     public GameObject[] waypoints;
     public bool interruptor;
+    public GameObject waypointSelected;
 
     
     public GameObject NextWaypoint (GameObject current)
     {
+        bool goodChoice;
         if(interruptor)
         {
             return SequenceMethod(current);
         }
         else
         {
-            return RandomLOSMethod(current);
+            goodChoice=false;
+            while(!goodChoice)
+            {
+                waypointSelected=RandomLOSMethod(current);
+                int roll= Random.Range(0,99);
+                if(roll<waypointSelected.GetComponent<TargetChance>().chance)
+                {
+                    goodChoice=true;
+                }
+            }
+
+            RefreshWaypoints();
+            waypointSelected.GetComponent<TargetChance>().chance=-25;
+            return waypointSelected;
+            
         }
         
 
@@ -97,5 +113,21 @@ public class WaypointManager : MonoBehaviour
         
     }
 
-    
+    public void RefreshWaypoints()
+    {
+        foreach(Transform x in this.transform)
+        {
+            if(x.GetComponent<TargetChance>().chance<100)
+            {
+                x.GetComponent<TargetChance>().chance+=25;
+            }
+            
+            if(x.GetComponent<TargetChance>().chance>=100)
+            {
+                 x.GetComponent<TargetChance>().chance=100;
+            }
+        }
+    }
+
+
 }
