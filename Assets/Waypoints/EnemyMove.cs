@@ -24,20 +24,28 @@ public class EnemyMove : MonoBehaviour
     public int stayThreshold=75;
     private bool isScanning;
     public bool isWaiting;
+    public string movementAnimation;
+    private bool isFirstTimeMoving=true;
 
     void Awake()
     {
         waypointManager = managerHolder.GetComponent<WaypointManager>();
-        currentTarget = initialTarget;
-        currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;
+        isWaiting=true;
     }
 
+    
     void FixedUpdate()
     {
-        
         if (!isWaiting)
         {
+            movementAnimation = "Walking";
             source = transform.position;
+            if (isFirstTimeMoving)
+            {
+                currentTarget = initialTarget;
+                currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;
+                isFirstTimeMoving=false;
+            }
             target = currentTarget.transform.position;
             outputVelocity = Arrive(source,target);
             GetComponent<Rigidbody>().AddForce(outputVelocity, ForceMode.VelocityChange);
@@ -56,14 +64,13 @@ public class EnemyMove : MonoBehaviour
                 currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;
             }
         }
-        else
+        else if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Armature|Walk"))
         {
-            if(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Armature|Walk"))
-            {
-              isWaiting=false;  
-            }
-            
+            isWaiting=false;  
         }
+
+
+    
         
         
     }
@@ -81,6 +88,7 @@ public class EnemyMove : MonoBehaviour
     {
         isWaiting=true;
         GetComponent<Animator>().Play("Armature|No Jiggle");
+        movementAnimation = "Waiting";
 
 
     }

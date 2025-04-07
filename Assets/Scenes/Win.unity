@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e6a820bc435484e9485823b1070577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Prototype World
+  levelToLoad: Menu
 --- !u!114 &432152601
 MonoBehaviour:
   m_ObjectHideFlags: 0
