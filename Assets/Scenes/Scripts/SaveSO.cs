@@ -23,7 +23,7 @@ public class SaveSO : ScriptableObject
     public void PrepareLevel()
     {
         int level=GameObject.Find("Save Handler").GetComponent<SaveSystem>().gameStatus.level;
-        if(level==1)
+        if(level==1||level==0)
         {
             gameStatus.enemyCount=1;
             gameStatus.heat=1;

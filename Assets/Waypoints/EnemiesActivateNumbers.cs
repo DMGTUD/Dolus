@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class EnemiesActivateNumbers : MonoBehaviour
 {
-    int amountToActivate;
-    public GameStatus_SO GSO;
+    public int amountToActivate;
+    public SaveSO GSO;
 
-    void Wake()
+    void Start()
     {
-        amountToActivate=GSO.enemyCount;
-        print("FUCK YOU JHONA! ITS"+GSO.enemyCount);
+        amountToActivate=GSO.gameStatus.enemyCount;
+        print("FUCK YOU JHONA! ITS"+GSO.gameStatus.enemyCount);
         print("Activating"+amountToActivate);
     }
 

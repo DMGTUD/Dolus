@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SaveSO
   m_EditorClassIdentifier: 
   gameStatus:
-    enemyCount: 321
-    heat: 2
+    enemyCount: 0
+    heat: 0

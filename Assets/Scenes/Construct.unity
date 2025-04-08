@@ -33060,9 +33060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a34e2012aee74348a7a0c62f43151e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GSO:
-    enemyCount: 0
-    heat: 0
+  GSO: {fileID: 11400000, guid: 30d90902b5a626246a32a67b144e7d7f, type: 2}
 --- !u!43 &1846018438
 Mesh:
   m_ObjectHideFlags: 0
