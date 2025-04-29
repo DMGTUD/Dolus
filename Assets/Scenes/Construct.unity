@@ -16952,9 +16952,13 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4537820862196676076, guid: 2b07fb5a65b25b04ca1c41811ccb0ba4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2806363557253865630, guid: 2b07fb5a65b25b04ca1c41811ccb0ba4, type: 3}
+    - target: {fileID: -4537820862196676076, guid: 2b07fb5a65b25b04ca1c41811ccb0ba4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4fbb9a8d168268b40a7c3178487c4659, type: 2}
+      objectReference: {fileID: 2100000, guid: 1d47dd24383d1964bb05b2a444411f1d, type: 2}
     - target: {fileID: -4329975975813091566, guid: 2b07fb5a65b25b04ca1c41811ccb0ba4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.0000033925003
@@ -33060,6 +33064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a34e2012aee74348a7a0c62f43151e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountToActivate: 0
   GSO: {fileID: 11400000, guid: 30d90902b5a626246a32a67b144e7d7f, type: 2}
 --- !u!43 &1846018438
 Mesh:
