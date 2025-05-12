@@ -1,15 +1,29 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
 
 public class WaypointManager : MonoBehaviour
 { 
     int nextIndex;
-    public GameObject[] waypoints;
-    public bool interruptor;
+    public List<GameObject> waypoints= new List<GameObject>();
+    public bool interruptor; //if true, selects next target via sequence;
     public GameObject waypointSelected;
+    public int chanceDecay=75;
+    public int chanceRegen=25;
 
+    public void Start()
+    {
+        foreach(Transform child in this.transform)
+        {
+            waypoints.Add(child.gameObject);
+        }
+    }
+    
+    
     
     public GameObject NextWaypoint (GameObject current)
     {
+        interruptor=current.GetComponent<TargetChance>().sequence;
         bool goodChoice;
         if(interruptor)
         {
@@ -21,7 +35,7 @@ public class WaypointManager : MonoBehaviour
             while(!goodChoice)
             {
                 waypointSelected=RandomLOSMethod(current);
-                int roll= Random.Range(0,99);
+                int roll= UnityEngine.Random.Range(0,99);
                 if(roll<waypointSelected.GetComponent<TargetChance>().chance)
                 {
                     goodChoice=true;
@@ -29,7 +43,7 @@ public class WaypointManager : MonoBehaviour
             }
 
             RefreshWaypoints();
-            waypointSelected.GetComponent<TargetChance>().chance=-25;
+            waypointSelected.GetComponent<TargetChance>().chance=-chanceDecay;
             return waypointSelected;
             
         }
@@ -39,21 +53,17 @@ public class WaypointManager : MonoBehaviour
 
     public GameObject SequenceMethod (GameObject current)
     {
-        if(current!=null)
+        if(current.GetComponent<TargetChance>().nextTargetA.GetComponent<TargetChance>().chance>=current.GetComponent<TargetChance>().nextTargetB.GetComponent<TargetChance>().chance)
         {
-            for(int i = 0; i<waypoints.Length;i++)
-            {
-                if(current==waypoints[i])
-                {
-                    nextIndex = (i+1)%waypoints.Length;
-                }
-            }
+            current.GetComponent<TargetChance>().nextTargetA.GetComponent<TargetChance>().chance=-chanceDecay;
+            return current.GetComponent<TargetChance>().nextTargetA;
         }
         else
         {
-            nextIndex=0;
+            current.GetComponent<TargetChance>().nextTargetB.GetComponent<TargetChance>().chance=-chanceDecay;
+            return current.GetComponent<TargetChance>().nextTargetB;
         }
-        return waypoints[nextIndex];
+        
     }
 
     public GameObject RandomLOSMethod (GameObject current)
@@ -107,7 +117,7 @@ public class WaypointManager : MonoBehaviour
         }
         
         
-        int kawesa = Random.Range(0,sizeCount-1);
+        int kawesa = UnityEngine.Random.Range(0,sizeCount-1);
         return possibleTargets[kawesa]; 
         //return null;
         
@@ -119,7 +129,7 @@ public class WaypointManager : MonoBehaviour
         {
             if(x.GetComponent<TargetChance>().chance<100)
             {
-                x.GetComponent<TargetChance>().chance+=25;
+                x.GetComponent<TargetChance>().chance+=chanceRegen;
             }
             
             if(x.GetComponent<TargetChance>().chance>=100)
