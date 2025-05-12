@@ -8,7 +8,7 @@ public class EnemiesActivateNumbers : MonoBehaviour
     void Start()
     {
         amountToActivate=GSO.gameStatus.enemyCount;
-        print("FUCK YOU JHONA! ITS"+GSO.gameStatus.enemyCount);
+        print("ITS"+GSO.gameStatus.enemyCount);
         print("Activating"+amountToActivate);
     }
 

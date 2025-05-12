@@ -8,7 +8,7 @@ public class WaypointManager : MonoBehaviour
     public List<GameObject> waypoints= new List<GameObject>();
     public bool interruptor; //if true, selects next target via sequence;
     public GameObject waypointSelected;
-    public int chanceDecay=75;
+    public int chanceDecay=25;
     public int chanceRegen=25;
 
     public void Start()
@@ -79,7 +79,7 @@ public class WaypointManager : MonoBehaviour
 
             //print (fromPosition+toPosition+direction);                                                             
 
-            if(Physics.Raycast(fromPosition, direction,out hit,7))
+            if(Physics.Raycast(fromPosition, direction,out hit,8))
             {
                 if(hit.collider.tag == "Waypoint")
                 {
@@ -102,7 +102,7 @@ public class WaypointManager : MonoBehaviour
             Vector3 direction = toPosition - fromPosition;
             RaycastHit hit;
 
-            if(Physics.Raycast(fromPosition, direction,out hit,7))
+            if(Physics.Raycast(fromPosition, direction,out hit,8))
             {
                 if(hit.collider.tag == "Waypoint")
                 {
