@@ -11,6 +11,7 @@ public class UIStates : MonoBehaviour
     public GameObject computerClose;
     public GameObject hide;
     public GameObject unHide;
+    public GameObject computerOpenUI;
 
 
     void Start()
@@ -27,6 +28,7 @@ public class UIStates : MonoBehaviour
         {
             computerOpen.SetActive(true);
             computerClose.SetActive(false);
+            computerOpenUI.SetActive(false);
             hide.SetActive(true);
             unHide.SetActive(false);
         }
@@ -34,6 +36,7 @@ public class UIStates : MonoBehaviour
         {
             computerOpen.SetActive(false);
             computerClose.SetActive(true);
+            computerOpenUI.SetActive(true);
             hide.SetActive(false);
             unHide.SetActive(false);
         }
@@ -41,6 +44,7 @@ public class UIStates : MonoBehaviour
         {
             computerOpen.SetActive(false);
             computerClose.SetActive(false);
+            computerOpenUI.SetActive(false);
             hide.SetActive(false);
             unHide.SetActive(true);
         }
