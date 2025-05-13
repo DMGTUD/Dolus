@@ -14,6 +14,7 @@ public class EnemyMove : MonoBehaviour
     Vector3 velocityToTarget;
     float distanceToTarget;
     float speed;
+    private GameObject playerCode;
 
     [Header("Materials")]
     public Material noTarget;
@@ -31,6 +32,7 @@ public class EnemyMove : MonoBehaviour
     {
         waypointManager = managerHolder.GetComponent<WaypointManager>();
         isWaiting=true;
+        playerCode= GameObject.Find("Player Code");
     }
 
     
@@ -51,17 +53,25 @@ public class EnemyMove : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(outputVelocity, ForceMode.VelocityChange);
             if(Vector3.Distance(source,target)<proximity)
             {
-                currentTarget.GetComponent<MeshRenderer> ().material=noTarget;
-                int coinToss = Random.Range(1,100);
-                //print(coinToss);
-                if(coinToss<stayThreshold)
+                if(CheckKill())
                 {
                     DelayMove();
                 }
-                GameObject tempObject = currentTarget;
-                currentTarget = waypointManager.NextWaypoint(tempObject);
-                transform.LookAt(currentTarget.transform);
-                currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;
+                else
+                {
+                    currentTarget.GetComponent<MeshRenderer> ().material=noTarget;
+                    int coinToss = Random.Range(1,100);
+                    //print(coinToss);
+                    if(coinToss<stayThreshold)
+                    {
+                        DelayMove();
+                    }
+                    GameObject tempObject = currentTarget;
+                    currentTarget = waypointManager.NextWaypoint(tempObject);
+                    transform.LookAt(currentTarget.transform);
+                    currentTarget.GetComponent<MeshRenderer> ().material=yesTarget;  
+                }
+                
             }
         }
         else if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Armature|Walk"))
@@ -91,5 +101,18 @@ public class EnemyMove : MonoBehaviour
         movementAnimation = "Waiting";
 
 
+    }
+
+    public bool CheckKill()
+    {
+        if(!playerCode.GetComponent<CameraMovement>().hidden)
+        {
+            playerCode.GetComponent<CameraMovement>().dead=true;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

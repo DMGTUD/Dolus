@@ -39,9 +39,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Color_Threshold: 0.1
-    - _Depth_Line: -1.08
-    - _Depth_Line_Bias: -7.58
-    - _Distance: 0.2
+    - _Depth_Line: -6.98
+    - _Depth_Line_Bias: 0.46
+    - _Distance: 0.37
     - _Normal_Threshold: 0.001
     - _OVERLAY: 1
     m_Colors:

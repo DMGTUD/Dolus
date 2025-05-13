@@ -7,5 +7,6 @@ public class TargetChance : MonoBehaviour
     public bool sequence=false;
     public GameObject nextTargetA;
     public GameObject nextTargetB;
+    public bool checkDie;
     
 }

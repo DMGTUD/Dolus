@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using System;
+using System.Collections.Generic;
 
 public class CameraSwitch : MonoBehaviour
 {
@@ -7,10 +9,7 @@ public class CameraSwitch : MonoBehaviour
     public int activeCam;
     public GameObject videoFeed;
     public bool hasChanged;
-    public Material CamMat;
-    public Texture Cam1;
-    public Texture Cam2;
-    public Texture Cam3;
+    public List<Material> cameras = new List<Material>();
 
     
     
@@ -37,21 +36,17 @@ public class CameraSwitch : MonoBehaviour
             camText=(activeCam.ToString());
         }
         this.GetComponent<TextMeshProUGUI>().text=("CAM "+ camText);
-        if (activeCam==1)
+        
+        if(hasChanged)
         {
-            CamMat.SetTexture("_BaseMap", Cam1);
+            videoFeed.GetComponent<UnityEngine.UI.Image>().material = cameras[activeCam-1];
+            hasChanged=false;
+            //Debug.Log("Yousa");
         }
-        else if (activeCam==2)
-        {
-            CamMat.SetTexture("_BaseMap", Cam2);
-        }
-        else if (activeCam==3)
-        {
-            CamMat.SetTexture("_BaseMap", Cam3);
-        }
+        
+        
 
-
-        hasChanged=false;
+        
 
     }
 

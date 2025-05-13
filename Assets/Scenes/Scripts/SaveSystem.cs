@@ -83,6 +83,7 @@ public class SaveSystem : MonoBehaviour
         gameStatus.level=0;
         gameStatus.deathCount=0;
         Debug.Log("Save File Reset");
+        SaveGameStatus();
     }
 
 }
