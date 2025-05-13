@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class CameraMovement : MonoBehaviour
     public bool hidden;
     public bool dead;
     public bool timesUp;
+    public bool killed;
+    private float timeToDie=1.2f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +43,18 @@ public class CameraMovement : MonoBehaviour
                 hidden = false;
             }  
         }
+
+        if(dead)
+        {
+            currentPosition=3;
+            timeToDie-=Time.deltaTime;
+            if(timeToDie<=0)
+            {
+                SceneManager.LoadScene("Menu");
+            }
+        }
         
+
 
         this.GetComponentInChildren<Animator>().SetInteger("Position",currentPosition);
         this.GetComponentInChildren<Animator>().SetBool("Is Dead",dead);

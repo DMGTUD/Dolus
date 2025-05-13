@@ -4,7 +4,7 @@ public class UIStates : MonoBehaviour
 {
     [Header("States")]
     public int position;
-    //0=office, 1=Computer, 2=hide
+    //0=office, 1=Computer, 2=hide,3=no UI
 
     [Header("UI Objects")]
     public GameObject computerOpen;
@@ -47,6 +47,15 @@ public class UIStates : MonoBehaviour
             computerOpenUI.SetActive(false);
             hide.SetActive(false);
             unHide.SetActive(true);
+        }
+
+        else if (position==3)
+        {
+            computerOpen.SetActive(false);
+            computerClose.SetActive(false);
+            computerOpenUI.SetActive(false);
+            hide.SetActive(false);
+            unHide.SetActive(false);
         }
     }
 }

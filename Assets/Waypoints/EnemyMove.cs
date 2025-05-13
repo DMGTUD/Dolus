@@ -105,7 +105,7 @@ public class EnemyMove : MonoBehaviour
 
     public bool CheckKill()
     {
-        if(!playerCode.GetComponent<CameraMovement>().hidden)
+        if(!playerCode.GetComponent<CameraMovement>().hidden&&currentTarget.GetComponent<TargetChance>().checkDie)
         {
             playerCode.GetComponent<CameraMovement>().dead=true;
             return true;
